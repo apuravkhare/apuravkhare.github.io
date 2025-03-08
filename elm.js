@@ -6207,7 +6207,10 @@ var $author$project$Page$Code$codewars = A2(
 				])),
 			A2(
 			$elm$html$Html$div,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'color', 'rgba(0,0,0,0.7)')
+				]),
 			_List_fromArray(
 				[
 					$elm$html$Html$text('I love programming for fun and learning new programming languages. I\'m in the top 7 percentile on the competitive coding website Code wars.\n            \n            Join me in the fun '),
@@ -6244,7 +6247,10 @@ var $author$project$Page$Code$personalSite = A2(
 				])),
 			A2(
 			$elm$html$Html$div,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'color', 'rgba(0,0,0,0.7)')
+				]),
 			_List_fromArray(
 				[
 					$elm$html$Html$text('I took the opportunity to learn a new programming language, Elm, and wrote the website in it! It was a great experience learning the fundamentals of the language, and how it guarantees no runtime errors.\n        \n        You can find the source code for the website on my github '),
@@ -6261,6 +6267,15 @@ var $author$project$Page$Code$personalSite = A2(
 					$elm$html$Html$text('.')
 				]))
 		]));
+var $elm$html$Html$hr = _VirtualDom_node('hr');
+var $author$project$Page$Code$separator = A2(
+	$elm$html$Html$hr,
+	_List_fromArray(
+		[
+			A2($elm$html$Html$Attributes$style, 'width', '40%'),
+			A2($elm$html$Html$Attributes$style, 'opacity', '0.3')
+		]),
+	_List_Nil);
 var $author$project$Page$Code$thesis = A2(
 	$elm$html$Html$div,
 	_List_fromArray(
@@ -6281,7 +6296,10 @@ var $author$project$Page$Code$thesis = A2(
 				])),
 			A2(
 			$elm$html$Html$div,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'color', 'rgba(0,0,0,0.7)')
+				]),
 			_List_fromArray(
 				[
 					$elm$html$Html$text('Ad-hoc polymorphism is a type of polymorphism where different function definitions can be given the same name. Programming languages utilize constructs like Type classes and Object classes to provide a mechanism for implementing ad-hoc polymorphism\n        \n        I did my thesis constructing an interpreter for a programming language that implements ad-hoc polymorphism in a type system with type classes.\n        \n        You can read all about it '),
@@ -6313,7 +6331,9 @@ var $author$project$Page$Code$view = function (model) {
 		_List_fromArray(
 			[
 				$author$project$Page$Code$codeItem($author$project$Page$Code$personalSite),
+				$author$project$Page$Code$separator,
 				$author$project$Page$Code$codeItem($author$project$Page$Code$thesis),
+				$author$project$Page$Code$separator,
 				$author$project$Page$Code$codeItem($author$project$Page$Code$codewars)
 			]));
 };
