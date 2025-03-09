@@ -6119,6 +6119,7 @@ var $j_panasiuk$elm_ionicons$Ionicon$Internal$p = F3(
 	});
 var $j_panasiuk$elm_ionicons$Ionicon$Social$instagramOutline = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M448.5,112c0-26.233-21.267-47.5-47.5-47.5H112c-26.233,0-47.5,21.267-47.5,47.5v289 c0,26.233,21.267,47.5,47.5,47.5h289c26.233,0,47.5-21.267,47.5-47.5V112z M257,175.833c44.182,0,80,35.816,80,80s-35.818,80-80,80 s-80-35.816-80-80S212.818,175.833,257,175.833z M416.5,160.5c0,8.836-7.163,16-16,16h-48c-8.837,0-16-7.164-16-16v-48 c0-8.836,7.163-16,16-16h48c8.837,0,16,7.164,16,16V160.5z M401.5,416.5h-288c-8.822,0-17-8.178-17-17v-175h53.072 c-3.008,10-4.572,20.647-4.572,31.583C145,286,156.65,314,177.805,335.154s49.279,32.741,79.195,32.741s58.041-11.681,79.195-32.835 S369,286.016,369,256.099c0-10.936-1.563-21.599-4.572-31.599H416.5v175C416.5,408.322,410.322,416.5,401.5,416.5z');
 var $j_panasiuk$elm_ionicons$Ionicon$Social$linkedin = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9C448,76.6,434.7,64,417.2,64zM183,384h-55V213h55V384zM157.4,187H157c-17.6,0-29-13.1-29-29.5c0-16.7,11.7-29.5,29.7-29.5c18,0,29,12.7,29.4,29.5C187.1,173.9,175.7,187,157.4,187zM384,384h-55v-93.5c0-22.4-8-37.7-27.9-37.7c-15.2,0-24.2,10.3-28.2,20.3c-1.5,3.6-1.9,8.5-1.9,13.5V384h-55V213h55v23.8c8-11.4,20.5-27.8,49.6-27.8c36.1,0,63.4,23.8,63.4,75.1V384z');
+var $j_panasiuk$elm_ionicons$Ionicon$Android$menu = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M64,384h384v-42.666H64V384zM64,277.334h384v-42.667H64V277.334zM64,128v42.665h384V128H64z');
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $author$project$Mobile$Buff = {$: 'Buff'};
@@ -6131,7 +6132,7 @@ var $author$project$Mobile$viewLink = F3(
 			_List_fromArray(
 				[
 					A2($elm$html$Html$Attributes$style, 'height', '50px'),
-					A2($elm$html$Html$Attributes$style, 'padding', '10px'),
+					A2($elm$html$Html$Attributes$style, 'padding', '0.5em'),
 					A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
 					A2($elm$html$Html$Attributes$style, 'font-size', '30pt')
 				]),
@@ -6176,36 +6177,6 @@ var $author$project$Mobile$mobileMenu = function (model) {
 			]),
 		_List_Nil);
 };
-var $elm$svg$Svg$g = $elm$svg$Svg$trustedNode('g');
-var $j_panasiuk$elm_ionicons$Ionicon$Internal$ps = F3(
-	function (ds, size, color) {
-		return A2(
-			$j_panasiuk$elm_ionicons$Ionicon$Internal$svg,
-			size,
-			_List_fromArray(
-				[
-					A2(
-					$elm$svg$Svg$g,
-					_List_Nil,
-					A2(
-						$elm$core$List$map,
-						function (d) {
-							return A2(
-								$elm$svg$Svg$path,
-								_List_fromArray(
-									[
-										$elm$svg$Svg$Attributes$d(d),
-										$elm$svg$Svg$Attributes$fill(
-										$j_panasiuk$elm_ionicons$Ionicon$Internal$fill(color))
-									]),
-								_List_Nil);
-						},
-						ds))
-				]));
-	});
-var $j_panasiuk$elm_ionicons$Ionicon$Ios$more = $j_panasiuk$elm_ionicons$Ionicon$Internal$ps(
-	_List_fromArray(
-		['M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z', 'M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z', 'M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z']));
 var $elm$virtual_dom$VirtualDom$Normal = function (a) {
 	return {$: 'Normal', a: a};
 };
@@ -6475,7 +6446,7 @@ var $author$project$MobilePage$Home$view = function (model) {
 								$elm$html$Html$div,
 								_List_fromArray(
 									[
-										A2($elm$html$Html$Attributes$style, 'height', '50vh'),
+										A2($elm$html$Html$Attributes$style, 'min-height', '50vh'),
 										A2($elm$html$Html$Attributes$style, 'background-color', 'rgba(255,255,255,0.8)'),
 										A2($elm$html$Html$Attributes$style, 'white-space', 'pre-line'),
 										A2($elm$html$Html$Attributes$style, 'padding', '10px'),
@@ -6973,15 +6944,14 @@ var $author$project$Mobile$view = function (model) {
 										$elm$html$Html$span,
 										_List_fromArray(
 											[
-												A2($elm$html$Html$Attributes$style, 'background-color', 'rgba(255,255,255,0.5)'),
 												$elm$html$Html$Events$onClick($author$project$Mobile$ToggleMenu)
 											]),
 										_List_fromArray(
 											[
 												A2(
-												$j_panasiuk$elm_ionicons$Ionicon$Ios$more,
+												$j_panasiuk$elm_ionicons$Ionicon$Android$menu,
 												70,
-												A4($author$project$Mobile$RGBA, 0, 0, 0, 1))
+												A4($author$project$Mobile$RGBA, 255, 255, 255, 1))
 											]))
 									]))
 							])),
