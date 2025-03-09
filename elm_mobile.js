@@ -5954,7 +5954,7 @@ var $author$project$Mobile$changeUrl = F2(
 			return _Utils_Tuple2(
 				_Utils_update(
 					model,
-					{page: answer}),
+					{menu: false, page: answer}),
 				$elm$core$Platform$Cmd$none);
 		} else {
 			return _Utils_Tuple2(
@@ -5998,7 +5998,6 @@ var $author$project$Mobile$RGBA = F4(
 	});
 var $author$project$Mobile$ToggleMenu = {$: 'ToggleMenu'};
 var $elm$html$Html$a = _VirtualDom_node('a');
-var $elm$html$Html$button = _VirtualDom_node('button');
 var $elm$html$Html$div = _VirtualDom_node('div');
 var $elm$html$Html$footer = _VirtualDom_node('footer');
 var $author$project$Mobile$getColor = function (c) {
@@ -6284,7 +6283,7 @@ var $author$project$MobilePage$Code$codeItem = function (child) {
 		$elm$html$Html$div,
 		_List_fromArray(
 			[
-				A2($elm$html$Html$Attributes$style, 'width', '50%')
+				A2($elm$html$Html$Attributes$style, 'width', '80%')
 			]),
 		_List_fromArray(
 			[child]));
@@ -6382,7 +6381,7 @@ var $author$project$MobilePage$Code$thesis = A2(
 	$elm$html$Html$div,
 	_List_fromArray(
 		[
-			A2($elm$html$Html$Attributes$style, 'text-align', 'right')
+			A2($elm$html$Html$Attributes$style, 'text-align', 'left')
 		]),
 	_List_fromArray(
 		[
@@ -6971,9 +6970,10 @@ var $author$project$Mobile$view = function (model) {
 								_List_fromArray(
 									[
 										A2(
-										$elm$html$Html$button,
+										$elm$html$Html$span,
 										_List_fromArray(
 											[
+												A2($elm$html$Html$Attributes$style, 'background-color', 'rgba(255,255,255,0.5)'),
 												$elm$html$Html$Events$onClick($author$project$Mobile$ToggleMenu)
 											]),
 										_List_fromArray(
