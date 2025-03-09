@@ -6120,8 +6120,18 @@ var $j_panasiuk$elm_ionicons$Ionicon$Internal$p = F3(
 var $j_panasiuk$elm_ionicons$Ionicon$Social$instagramOutline = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M448.5,112c0-26.233-21.267-47.5-47.5-47.5H112c-26.233,0-47.5,21.267-47.5,47.5v289 c0,26.233,21.267,47.5,47.5,47.5h289c26.233,0,47.5-21.267,47.5-47.5V112z M257,175.833c44.182,0,80,35.816,80,80s-35.818,80-80,80 s-80-35.816-80-80S212.818,175.833,257,175.833z M416.5,160.5c0,8.836-7.163,16-16,16h-48c-8.837,0-16-7.164-16-16v-48 c0-8.836,7.163-16,16-16h48c8.837,0,16,7.164,16,16V160.5z M401.5,416.5h-288c-8.822,0-17-8.178-17-17v-175h53.072 c-3.008,10-4.572,20.647-4.572,31.583C145,286,156.65,314,177.805,335.154s49.279,32.741,79.195,32.741s58.041-11.681,79.195-32.835 S369,286.016,369,256.099c0-10.936-1.563-21.599-4.572-31.599H416.5v175C416.5,408.322,410.322,416.5,401.5,416.5z');
 var $j_panasiuk$elm_ionicons$Ionicon$Social$linkedin = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9C448,76.6,434.7,64,417.2,64zM183,384h-55V213h55V384zM157.4,187H157c-17.6,0-29-13.1-29-29.5c0-16.7,11.7-29.5,29.7-29.5c18,0,29,12.7,29.4,29.5C187.1,173.9,175.7,187,157.4,187zM384,384h-55v-93.5c0-22.4-8-37.7-27.9-37.7c-15.2,0-24.2,10.3-28.2,20.3c-1.5,3.6-1.9,8.5-1.9,13.5V384h-55V213h55v23.8c8-11.4,20.5-27.8,49.6-27.8c36.1,0,63.4,23.8,63.4,75.1V384z');
 var $j_panasiuk$elm_ionicons$Ionicon$Android$menu = $j_panasiuk$elm_ionicons$Ionicon$Internal$p('M64,384h384v-42.666H64V384zM64,277.334h384v-42.667H64V277.334zM64,128v42.665h384V128H64z');
+var $elm$html$Html$hr = _VirtualDom_node('hr');
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
+var $author$project$Mobile$separator = A2(
+	$elm$html$Html$hr,
+	_List_fromArray(
+		[
+			A2($elm$html$Html$Attributes$style, 'width', '80%'),
+			A2($elm$html$Html$Attributes$style, 'color', 'white'),
+			A2($elm$html$Html$Attributes$style, 'margin', '0px')
+		]),
+	_List_Nil);
 var $author$project$Mobile$Buff = {$: 'Buff'};
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
@@ -6131,10 +6141,13 @@ var $author$project$Mobile$viewLink = F3(
 			$elm$html$Html$div,
 			_List_fromArray(
 				[
-					A2($elm$html$Html$Attributes$style, 'height', '50px'),
 					A2($elm$html$Html$Attributes$style, 'padding', '0.5em'),
 					A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
-					A2($elm$html$Html$Attributes$style, 'font-size', '30pt')
+					A2($elm$html$Html$Attributes$style, 'font-size', '30pt'),
+					A2(
+					$elm$html$Html$Attributes$style,
+					'background-color',
+					$author$project$Mobile$getColor($author$project$Mobile$MidnightGreen))
 				]),
 			_List_fromArray(
 				[
@@ -6146,7 +6159,7 @@ var $author$project$Mobile$viewLink = F3(
 							A2(
 							$elm$html$Html$Attributes$style,
 							'color',
-							_Utils_eq(model.page, tab) ? $author$project$Mobile$getColor($author$project$Mobile$Buff) : 'black'),
+							_Utils_eq(model.page, tab) ? $author$project$Mobile$getColor($author$project$Mobile$Buff) : 'white'),
 							A2($elm$html$Html$Attributes$style, 'text-decoration', 'none')
 						]),
 					_List_fromArray(
@@ -6166,8 +6179,11 @@ var $author$project$Mobile$mobileMenu = function (model) {
 		_List_fromArray(
 			[
 				A3($author$project$Mobile$viewLink, model, $author$project$Mobile$Home, '/home'),
+				$author$project$Mobile$separator,
 				A3($author$project$Mobile$viewLink, model, $author$project$Mobile$Code, '/code'),
+				$author$project$Mobile$separator,
 				A3($author$project$Mobile$viewLink, model, $author$project$Mobile$Art, '/art'),
+				$author$project$Mobile$separator,
 				A3($author$project$Mobile$viewLink, model, $author$project$Mobile$Music, '/music')
 			])) : A2(
 		$elm$html$Html$div,
@@ -6339,7 +6355,6 @@ var $author$project$MobilePage$Code$personalSite = A2(
 					$elm$html$Html$text('.')
 				]))
 		]));
-var $elm$html$Html$hr = _VirtualDom_node('hr');
 var $author$project$MobilePage$Code$separator = A2(
 	$elm$html$Html$hr,
 	_List_fromArray(
